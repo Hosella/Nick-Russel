@@ -1,0 +1,78 @@
+.header {
+  &__motto {
+    background-color: #000;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FCFBFA;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 47px;
+  }
+
+  &__links{
+    display: flex;
+    gap: 23px;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    height: 20.4px;
+    width: 20.4px;
+  }
+
+  &__logo {
+    text-decoration: none;
+    color: $black;
+    font-size: 24px;
+    line-height: 27px;
+    font-family: 'Crimson';
+    text-transform: uppercase;
+  }
+
+  &__burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__span {
+    display: block;
+    height: 3px;
+    width: 32px;
+    background-color: $black;
+    cursor: pointer;
+  }
+}
+
+.instagram {
+  background: url(./../images/icons/instagram.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.facebook {
+  background: url(./../images/icons/facebook.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.linkedin {
+  background: url(./../images/icons/linkedin.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
