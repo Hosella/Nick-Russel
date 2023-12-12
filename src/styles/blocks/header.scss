@@ -13,7 +13,7 @@
 
   &__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-block: 47px;
   }
@@ -32,7 +32,7 @@
 
   &__logo {
     text-decoration: none;
-    color: $black;
+    color: black;
     font-size: 24px;
     line-height: 27px;
     font-family: 'Crimson';
@@ -51,7 +51,7 @@
     display: block;
     height: 3px;
     width: 32px;
-    background-color: $black;
+    background-color: black;
     cursor: pointer;
   }
 }
