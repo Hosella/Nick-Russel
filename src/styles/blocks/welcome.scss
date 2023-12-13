@@ -1,0 +1,98 @@
+.welcome {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    position: relative;
+    height: 695px;
+    width: 646px;
+    margin-top: 95px;
+  }
+
+  &__content {
+    position: absolute;
+    top: 350px;
+    right: 707px;
+  }
+
+  &__small-text {
+    font-size: 16px;
+    line-height: 8px;
+    letter-spacing: 3.5px;
+    color: $main-text;
+    text-transform: uppercase;
+  }
+
+  &__vertical-text {
+    width: fit-content;
+    color: $main-text;
+    font-size: 19px;
+    line-height: 8px;
+    transform: rotate(-90deg) translateY(-160px);
+  }
+
+  &__vertical-text strong{
+    color: black;
+  }
+
+  &__button {
+    display: block;
+    width: fit-content;
+    margin: 0;
+    margin-top: 30px;
+    padding: 20px 22px;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__button::before {
+    content: '';
+    display: block;
+    width: 159px;
+    height: 55px;
+    position: absolute;
+    top: 224px;
+    left: 0;
+    border: 1px solid black;
+    border-radius: 7px;
+    transition: all 0.6s ease-in-out;
+  }
+
+  &__button::after {
+    content: '';
+    display: block;
+    width: 159px;
+    height: 55px;
+    position: absolute;
+    top: 231px;
+    left: 7px;
+    border: 1px solid black;
+    border-radius: 7px;
+    transition: all 0.6s ease-in-out;
+  }
+
+  &__button:hover::before {
+    top: 231px;
+    left: 7px;
+    transition: all 0.6s ease-in-out;
+  }
+
+  &__button:hover::after {
+    top: 224px;
+    left: 0;
+    transition: all 0.6s ease-in-out;
+  }
+
+  &__arrow {
+    display: block;
+    padding: 5px;
+    height: 54px;
+    width: 13px;
+    margin-left: 70px;
+    margin-top: 250px;
+  }
+}
